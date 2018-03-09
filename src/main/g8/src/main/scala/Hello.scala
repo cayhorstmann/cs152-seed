@@ -8,7 +8,7 @@ class GreeterParser extends JavaTokenParsers {
   // http://www.rgagnon.com/javadetails/java-0522.html
   def unquote(s: String) = {     
     val props = new java.util.Properties
-    props.load(new java.io.StringReader("x=" + s))
+    props.load(new java.io.StringReader("x=" + s.substring(1, s.length - 1)))
     props.getProperty("x")
   }
 
