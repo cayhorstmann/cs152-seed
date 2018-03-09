@@ -1,5 +1,5 @@
 object Hello extends App {
-  val greeter = new Greeter("World")
+  val greeter = new Greeter("CS152 students")
   println(greeter.greet)
 }
 
