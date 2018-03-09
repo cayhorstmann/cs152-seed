@@ -3,10 +3,11 @@ import Dependencies._
 lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
-      organization := "com.example",
+      organization := "edu.sjsu.cs",
       scalaVersion := "2.12.4",
       version      := "0.1.0-SNAPSHOT"
     )),
     name := "$name$",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies ++= Seq(scalaTest % Test,
+"org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.0") 
   )

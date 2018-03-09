@@ -1,9 +1,7 @@
-package example
+import org.scalatest.FunSuite
 
-import org.scalatest._
-
-class HelloSpec extends FlatSpec with Matchers {
-  "The Hello object" should "say hello" in {
-    Hello.greeting shouldEqual "hello"
+class HelloSuite extends FunSuite {
+  test("Greeting CS152 students") {
+    assert(new Greeter("CS152 students").greet == "Hello CS152 students!")
   }
 }
