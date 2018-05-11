@@ -7,6 +7,7 @@ lazy val root = (project in file(".")).
     )),
     name := "$name$",
     libraryDependencies ++= Seq(
+      "org.scalacheck" %% "scalacheck" % "1.13.5",
       "org.scalatest" %% "scalatest" % "3.2.0-SNAP10" % "test",
       "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.0",
       "org.apache.bcel" % "bcel" % "6.2"
